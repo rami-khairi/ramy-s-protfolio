@@ -42,7 +42,82 @@
         
         <!--responsive.css-->
         <link rel="stylesheet" href="assets/css/responsive.css">
-        
+
+        <!--custom overrides for new sections-->
+        <style>
+            .certs-languages {
+                padding: 80px 0;
+                background-color: #111111;
+            }
+            .certs-languages .section-heading h2 {
+                color: #ffffff;
+            }
+            .certs-languages .container {
+                max-width: 1000px;
+            }
+            .certs-languages .cl-col {
+                background: #1c1c1c;
+                border: 1px solid #333333;
+                border-radius: 6px;
+                padding: 35px 35px 25px;
+                height: 100%;
+                box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+            }
+            .certs-languages .cl-col h3 {
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin: 0 0 25px;
+                padding-bottom: 15px;
+                border-bottom: 2px solid #444444;
+                color: #ffffff;
+            }
+            .certs-languages ul.cl-list {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            .certs-languages ul.cl-list li {
+                position: relative;
+                padding: 10px 0 10px 30px;
+                border-bottom: 1px solid #2c2c2c;
+                color: #cfcfcf;
+                font-size: 15px;
+                line-height: 1.5;
+            }
+            .certs-languages ul.cl-list li:last-child {
+                border-bottom: none;
+            }
+            .certs-languages ul.cl-list li i {
+                position: absolute;
+                left: 0;
+                top: 13px;
+                font-size: 15px;
+                color: #e74c3c;
+            }
+            .certs-languages ul.lang-list li strong {
+                color: #ffffff;
+                margin-right: 6px;
+            }
+            .certs-languages .cl-row {
+                margin-bottom: 30px;
+            }
+            @media (max-width: 767px) {
+                .certs-languages .cl-col {
+                    margin-bottom: 25px;
+                }
+            }
+            .projects-section {
+                padding: 80px 0 60px;
+                background-color: #0c0c0c;
+            }
+            .projects-section .section-heading h2 {
+                color: #ffffff;
+                margin-bottom: 40px;
+            }
+        </style>
+
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		
@@ -82,9 +157,8 @@
 			                    <li class=" smooth-menu"><a href="#education">education</a></li>
 			                    <li class="smooth-menu"><a href="#skills">skills</a></li>
 			                    <li class="smooth-menu"><a href="#experience">experience</a></li>
-			                    <li class="smooth-menu"><a href="#profiles">profile</a></li>
-			                    <li class="smooth-menu"><a href="#portfolio">portfolio</a></li>
-			                    <li class="smooth-menu"><a href="#clients">clients</a></li>
+			                    <li class="smooth-menu"><a href="#projects">projects</a></li>
+			                    <li class="smooth-menu"><a href="#certifications">certifications</a></li>
 			                    <li class="smooth-menu"><a href="#contact">contact</a></li>
 			                </ul><!--/.nav -->
 			            </div><!-- /.navbar-collapse -->
@@ -107,7 +181,7 @@
 							<h3>Hello, it's me </h3>
 							<h3>Ramy Majed Ali</h3>
 							<h3>And I'm a <span class="text"></span></h3>
-							<a href="assets/download/Ramy CV resume.pdf" download>download resume</a>
+							<a href="assets/download/Ramy Majed Ali Resume.pdf" download>download resume</a>
 
 						</div><!--/.header-text-->
 					</div><!--/.col-->
@@ -128,25 +202,21 @@
 						<div class="col-sm-6">
 							<div class="single-about-txt">
 								<h3>
-									Motivated and Responsible Computer Science Student
+									Software Quality Assurance Engineer
 								</h3>
-								<h3>UI/UX Designer and Web developer.</h3>
+								<h3>Frontend &amp; Full-Stack Developer.</h3>
 								<p>
-									Passionate About Innovating Through Technology,
-
-                  As a Computer Science student with a strong foundation in analytical skills and problem-solving,
-									 I am eager to apply my knowledge and drive to real-world challenges.
-									  I am committed to gaining valuable hands-on experience through meaningful projects and collaborations.
-										 My goal is to contribute to innovative solutions while continuously honing my programming abilities and
-										  technical expertise. I am excited about the prospect of learning and growing in a dynamic environment,
-											 where I can make a positive impact and advance my career in technology.
-									
+									Software Quality Assurance Engineer with experience in manual testing of web and mobile
+									applications. Skilled in test case design, functional, regression, smoke, and UI testing,
+									defect tracking using Jira, and working within Agile/Scrum teams. Backed by a frontend and
+									full-stack development background, enabling effective collaboration with developers and a
+									strong understanding of application functionality.
 								</p>
 								<div class="row">
 									<div class="col-sm-4">
 										<div class="single-about-add-info">
 											<h3>phone</h3>
-											<p>+923088518325</p>
+											<p>+92 308 8518325</p>
 										</div>
 									</div>
 									<div class="col-sm-4">
@@ -157,8 +227,8 @@
 									</div>
 									<div class="col-sm-5">
 										<div class="single-about-add-info3">
-											<h3>website</h3>
-											<p>ramikhairi.com</p>
+											<h3>location</h3>
+											<p>Lahore, Pakistan</p>
 										</div>
 									</div>
 								</div>
@@ -278,11 +348,11 @@
 								<div class="timeline">
 									<div class="timeline-content">
 										<h4 class="title">
-											Iqra University Chak Shahzad Campus Islamabad 
+											IQRA University, Islamabad 
 										</h4>
-										<h5>Islamabad, Pakistan</h5>
+										<h5>Islamabad, Pakistan | Mar 2021 – Nov 2025</h5>
 										<p class="description">
-											I am currently pursuing a degree in Computer Science at IQRA University, which I began in 2021 and anticipate completing by 2025. This program has equipped me with valuable knowledge and skills in various aspects of computer science, preparing me for a career in the dynamic field of technology. 
+											Bachelor of Computer Science at IQRA University, equipping me with valuable knowledge and skills in various aspects of computer science, preparing me for a career in the dynamic field of technology.
 										</p>
 									</div><!--/.timeline-content-->
 								</div><!--/.timeline-->
@@ -306,32 +376,43 @@
 							<div class="col-md-5" style="margin-right:50px;">
 								<div class="single-skill-content">
 									<div class="barWrapper">
-										<span class="progressText">Wordpress</span>
+										<span class="progressText">Manual Testing</span>
 										<div class="single-progress-txt">
 											<div class="progress ">
-												<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
+														<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="10" aria-valuemax="100">
 													  
 												</div>
+											</div>
+											<h3>95%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+									<div class="barWrapper">
+										<span class="progressText">Jira / Defect Tracking</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+													   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100">
+												    
+											   </div>
 											</div>
 											<h3>90%</h3>	
 										</div>
 									</div><!-- /.barWrapper -->
 									<div class="barWrapper">
-										<span class="progressText">figma</span>
+										<span class="progressText">Notion</span>
 										<div class="single-progress-txt">
 											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style="">
+													   <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100">
 												    
 											   </div>
 											</div>
-											<h3>80%</h3>	
+											<h3>85%</h3>	
 										</div>
 									</div><!-- /.barWrapper -->
 									<div class="barWrapper">
-										<span class="progressText">Frontend developer</span>
+										<span class="progressText">Test Case &amp; Scenario Design</span>
 										<div class="single-progress-txt">
 											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
+													   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100">
 												   
 											   </div>
 											</div>
@@ -339,14 +420,14 @@
 										</div>
 									</div><!-- /.barWrapper -->
 									<div class="barWrapper">
-										<span class="progressText">java script </span>
+										<span class="progressText">Selenium (Basic)</span>
 										<div class="single-progress-txt">
 											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="40" aria-valuemax="100" style="">
+													   <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="40" aria-valuemax="100">
 												    
 											   </div>
 											</div>
-											<h3>60%</h3>	
+											<h3>55%</h3>	
 										</div>
 									</div><!-- /.barWrapper -->
 								</div>
@@ -354,10 +435,10 @@
 							<div class="col-md-5">
 								<div class="single-skill-content">
 									<div class="barWrapper">
-										<span class="progressText">html </span>
+										<span class="progressText">HTML / CSS / JavaScript</span>
 										<div class="single-progress-txt">
 											<div class="progress ">
-												<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
+													<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100">
 													
 												</div>
 											</div>
@@ -365,36 +446,36 @@
 										</div>
 									</div><!-- /.barWrapper -->
 									<div class="barWrapper">
-										<span class="progressText">css </span>
+										<span class="progressText">React.js / Node.js / Express.js</span>
 										<div class="single-progress-txt">
 											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
+													   <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="10" aria-valuemax="100">
 												    
 											   </div>
 											</div>
-											<h3>90%</h3>	
+											<h3>80%</h3>	
 										</div>
 									</div><!-- /.barWrapper -->
 									<div class="barWrapper">
-										<span class="progressText">communication</span>
+										<span class="progressText">PostgreSQL / MySQL / Prisma</span>
 										<div class="single-progress-txt">
 											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="10" aria-valuemax="100" style="">
+													   <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="10" aria-valuemax="100">
 												   
 											   </div>
 											</div>
-											<h3>97%</h3>	
+											<h3>80%</h3>	
 										</div>
 									</div><!-- /.barWrapper -->
 									<div class="barWrapper">
-										<span class="progressText"> creativity</span>
+										<span class="progressText">Figma / UI-UX Design</span>
 										<div class="single-progress-txt">
 											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
+													   <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100">
 												    
 											   </div>
 											</div>
-											<h3>90%</h3>	
+											<h3>85%</h3>	
 										</div>
 									</div><!-- /.barWrapper -->
 								</div>
@@ -420,11 +501,11 @@
 										<div class="row">
 											<div class="col-md-5">
 												<div class="experience-time text-right">
-													<h2>frontend developer</h2>
-													<h3>More than one year</h3>
+													<h2>Software Quality Assurance Engineer</h2>
+													<h3>Kualitatem Inc. | Lahore, Pakistan</h3>
 													
 													<p class="description">
-														I have over one year of experience as a Frontend Developer, proficient in HTML, CSS, and JavaScript, with practical knowledge in creating responsive and interactive web applications. 
+														Oct 2025 – Present. Performing manual testing for web and mobile applications, designing and executing test cases based on business requirements, and conducting functional, regression, smoke, and UI testing. Logging and tracking defects using Jira, collaborating with developers, business analysts, and QA team members within Agile/Scrum teams, and maintaining QA documentation using Notion.
 													</p>
 												</div><!--/.experience-time-->
 											</div><!--/.col-->
@@ -433,11 +514,11 @@
 													<div class="timeline-content">
 														<h4 class="title">
 															<span><i class="fa fa-circle" aria-hidden="true"></i></span> 
-															UI / UX design
+															Frontend Web Development Intern
 														</h4>
-														<h5>More than 6 months</h5>
+														<h5>YoungDev Interns | Remote | Oct 2024 – Nov 2024</h5>
 														<p class="description">
-															I have over six months of experience in UI/UX design, where I honed skills in creating user-friendly and aesthetically pleasing interfaces, contributing to the development of effective digital experiences.
+															Built responsive web pages and collaborated using Git and GitHub.
 														</p>
 													</div><!--/.timeline-content-->
 												</div><!--/.timeline-->
@@ -453,20 +534,20 @@
 												<div class="experience-time">
 													<h2>
 														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														2018 - 2020
+														Jul 2024 – Aug 2024
 													</h2>
-													<h3>Arabic language teacher</h3>
+													<h3>Frontend Development Intern</h3>
 												</div><!--/.experience-time-->
 											</div><!--/.col-->
 											<div class="col-md-5">
 												<div class="timeline">
 													<div class="timeline-content text-right">
 														<h4 class="title">
-															Backend developer
+															CodeAlpha | Remote
 														</h4>
-														<h5>more than 3 months</h5>
+														<h5>Jul 2024 – Aug 2024</h5>
 														<p class="description"> 
-															I have more than three months of experience as a Backend Developer, working with technologies like Node.js, Python, and databases to develop and maintain server-side applications.
+															Developed responsive web interfaces using HTML, CSS, and JavaScript, and worked on modern frontend development projects.
 														</p>
 													</div><!--/.timeline-content-->
 												</div><!--/.timeline-->
@@ -475,9 +556,9 @@
 												<div class="experience-time">
 													<h2>
 														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														Digital Marketing
+														IT Assistant Intern
 													</h2>
-													<h3>more than one years</h3>
+													<h3>J&amp;S Technologies | Jun 2024 – Sep 2024</h3>
 												</div><!--/.experience-time-->
 											</div><!--/.col-->
 										</div>
@@ -489,8 +570,8 @@
 										<div class="row">
 											<div class="col-md-5">
 												<div class="experience-time text-right">
-													<h2>2013 - 2016</h2>
-													<h3>senior UI/UX designer</h3>
+													<h2>Jun 2024 – Sep 2024</h2>
+													<h3>IT Assistant Intern</h3>
 												</div><!--/.experience-time-->
 											</div><!--/.col-->
 											<div class="col-md-offset-1 col-md-5">
@@ -498,13 +579,10 @@
 													<div class="timeline-content">
 														<h4 class="title">
 															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															Arabic teacher
+															J&amp;S Technologies | Islamabad, Pakistan
 														</h4>
-														<h5>2018 - 2020</h5>
 														<p class="description">
-															I have experience as an Arabic teacher in Islamabad, where I taught the language to students of various age groups, helping them develop proficiency in reading, writing, and speaking Arabic.
-
- 
+															Provided technical support for hardware, software, and networking issues, and assisted with system administration and troubleshooting.
 														</p>
 													</div><!--/.timeline-content-->
 												</div><!--/.timeline-->
@@ -513,46 +591,6 @@
 									</div><!--/.single-timeline-box-->
 								</li>
 
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														2012 - 2013
-													</h2>
-													<h3>UI/UX designer</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-5">
-												<div class="timeline">
-													<div class="timeline-content text-right">
-														<h4 class="title">
-															call center
-														</h4>
-														<h5>more than six months</h5>
-														<p class="description">
-															I have experience working in a call center in Islamabad, where I handled customer inquiries and provided support, demonstrating strong communication skills and problem-solving abilities.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5 experience-time-main">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														Freelancing
-													</h2>
-													<h3>Freelancer at fiverr
-													</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
-
-								
 							</ul>
 						</div><!--.main-timeline-->
 					</div><!--.experience-content-->
@@ -561,169 +599,74 @@
 		</section><!--/.experience-->
 		<!--experience end -->
 
-		<!--profiles start -->
-		<section id="profiles" class="profiles">
-			<div class="profiles-details">
-				<div class="section-heading text-center">
-					<h2>profiles</h2>
-				</div>
-				<div class="container">
-					<div class="profiles-content">
-						<div class="row">
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href=""><i class="flaticon-themeforest"></i></a>
-										<div class="profile-icon-name">themeforest</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href=""><i class="flaticon-themeforest"></i></a>
-											<div class="profile-icon-name">themeforest</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href=""><i class="flaticon-dribbble"></i></a>
-										<div class="profile-icon-name">dribbble</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href=""><i class="flaticon-dribbble"></i></a>
-											<div class="profile-icon-name">dribbble</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href=""><i class="flaticon-behance-logo"></i></a>
-										<div class="profile-icon-name">behance</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href=""><i class="flaticon-behance-logo"></i></a>
-											<div class="profile-icon-name">behance</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="single-profile profile-no-border">
-									<div class="profile-txt">
-										<a href=""><i class="flaticon-github-logo"></i></a>
-										<div class="profile-icon-name">github</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href=""><i class="flaticon-github-logo"></i></a>
-											<div class="profile-icon-name">github</div>
-										</div>
-									</div>
-								</div>
-							</div>
+		<!--certifications start -->
+		<section id="certifications" class="certs-languages">
+			<div class="section-heading text-center">
+				<h2>certifications &amp; languages</h2>
+			</div>
+			<div class="container">
+				<div class="row cl-row">
+					<div class="col-sm-6">
+						<div class="cl-col">
+							<h3>Certifications</h3>
+							<ul class="cl-list">
+								<li><i class="fa fa-certificate" aria-hidden="true"></i>Frontend Development Internship – CodeAlpha (2024)</li>
+								<li><i class="fa fa-certificate" aria-hidden="true"></i>Frontend Web Development Internship – YoungDev Interns (2024)</li>
+								<li><i class="fa fa-certificate" aria-hidden="true"></i>IT Assistant Internship – J &amp; S Technologies (2024)</li>
+							</ul>
 						</div>
-						<div class="profile-border"></div>
-						<div class="row">
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href=""><i class="flaticon-flickr-website-logo-silhouette"></i></a>
-										<div class="profile-icon-name">flickR</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href=""><i class="flaticon-flickr-website-logo-silhouette"></i></a>
-											<div class="profile-icon-name">flickR</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href=""><i class="flaticon-smug"></i></a>
-										<div class="profile-icon-name">smungMung</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href=""><i class="flaticon-smug"></i></a>
-											<div class="profile-icon-name">smungMung</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href=""><i class="flaticon-squarespace-logo"></i></a>
-										<div class="profile-icon-name">squareSpace</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href=""><i class="flaticon-squarespace-logo"></i></a>
-											<div class="profile-icon-name">squareSpace</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="single-profile profile-no-border">
-									<div class="profile-txt">
-										<a href=""><i class="flaticon-bitbucket-logotype-camera-lens-in-perspective"></i></a>
-										<div class="profile-icon-name">bitBucket</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href=""><i class="flaticon-bitbucket-logotype-camera-lens-in-perspective"></i></a>
-											<div class="profile-icon-name">bitBucket</div>
-										</div>
-									</div>
-								</div>
-							</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="cl-col">
+							<h3>Languages</h3>
+							<ul class="cl-list lang-list">
+								<li><i class="fa fa-language" aria-hidden="true"></i><strong>Arabic:</strong> Native</li>
+								<li><i class="fa fa-language" aria-hidden="true"></i><strong>English:</strong> Advanced</li>
+								<li><i class="fa fa-language" aria-hidden="true"></i><strong>Urdu:</strong> Fluent</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 
-		</section><!--/.profiles-->
-		<!--profiles end -->
+		</section><!--/.certifications-->
+		<!--certifications end -->
 
-		<div class="container">
-			<!-- Project Cards -->
-			<div class="project-card" id="project1">
-					<img src="assets/images/portfolio/YemenWorld1.png" alt="YemenWorld">
-					<h3>YemenWorld</h3>
-					<a href="#" class="view-more" data-modal="modal1">Check</a>
+		<!--projects start -->
+		<section id="projects" class="projects-section">
+			<div class="section-heading text-center">
+				<h2>projects</h2>
 			</div>
+			<div class="container">
+				<!-- Project Cards -->
+				<div class="project-card" id="project1">
+						<img src="assets/images/portfolio/YemenWorld1.png" alt="YEMENIS E-Commerce">
+						<h3>YEMENIS | Full-Stack E-Commerce Platform</h3>
+						<a href="#" class="view-more" data-modal="modal1">Check</a>
+				</div>
 
-			<div class="project-card" id="project2">
-					<img src="assets/images/portfolio/JHC1.png" alt="Programming Learning Website">
-					<h3>Programming Learning Website</h3>
-					<a href="#" class="view-more" data-modal="modal2">Explore</a>
+				<div class="project-card" id="project2">
+						<img src="assets/images/portfolio/JHC1.png" alt="Programming Learning Platform">
+						<h3>Programming Learning Platform</h3>
+						<a href="#" class="view-more" data-modal="modal2">Explore</a>
+				</div>
+				
+				<!-- Add more project cards as needed -->
 			</div>
-			
-			<div class="project-card" id="project3">
-					<img src="assets/images/portfolio/ML2.png" alt="Iris Flower Classification ">
-					<h3>Iris Flower Classification </h3>
-					<a href="#" class="view-more" data-modal="modal3">Explore</a>
-			</div>
-
-			<!-- Add more project cards as needed -->
-	</div>
+		</section><!--/.projects-section-->
+		<!--projects end -->
 
 	<!-- Modal Structure -->
 	<div class="modal" id="modal1">
 			<div class="modal-content">
 					<span class="close" data-close="modal1">&times;</span>
-					<h2>e-commerce website</h2>
-					<p>Web Application</p>
-					<p>Technologies: HTML, CSS, JS, php</p>
-					<p>Role: Full Stack development</p>
+					<h2>YEMENIS | Full-Stack E-Commerce Platform</h2>
+					<p>Full-Stack Web Application</p>
+					<p>Technologies: Node.js, Express.js, PostgreSQL, Prisma ORM, Firebase Authentication</p>
+					<p>Role: Full Stack Development</p>
+					<p>Developed a full-stack e-commerce platform for traditional Yemeni products, built RESTful APIs
+						using Node.js and Express.js, and integrated Firebase Authentication, PostgreSQL, Prisma ORM,
+						and an AI chatbot.</p>
 					<div class="carousel">
 							<img src="assets/images/portfolio/YemenWorld1.png" alt="YemenWorld Image 1">
 							<img src="assets/images/portfolio/YemenWorld2.png" alt="YemenWorld Image 2">
@@ -741,10 +684,11 @@
 	<div class="modal" id="modal2">
 			<div class="modal-content">
 					<span class="close" data-close="modal2">&times;</span>
-					<h2>Programming Learning Website</h2>
+					<h2>Programming Learning Platform</h2>
 					<p>Web Application</p>
-					<p>Technologies: HTML, CSS</p>
-					<p>Role: Frontend</p>
+					<p>Technologies: HTML, CSS, JavaScript</p>
+					<p>Role: Frontend Development</p>
+					<p>Developed a responsive educational platform using modern frontend technologies.</p>
 					<div class="carousel">
 							<img src="assets/images/portfolio/JHC1.png" alt="JHC Image 1">
 							<img src="assets/images/portfolio/JHC2.png" alt="JHC Image 2">
@@ -752,32 +696,10 @@
 					</div>
 					<a href="#" target="_blank">View</a>
 			</div>
-			<div class="modal" id="modal3">
-				<div class="modal-content">
-						<span class="close" data-close="modal3">&times;</span>
-						<h2>Iris Flower Classification </h2>
-						<p>Machine Learning Model</p>
-						<p>Technologies: Python</p>
-						<p>Built a machine
-							learning model to classify iris species using
-							Python, performing data preprocessing,
-							visualization, and model evaluation.</p>
-						
-						<div class="carousel">
-								<img src="assets/images/portfolio/ML1.png" alt="ML Image 1">
-								<img src="assets/images/portfolio/ML2.png" alt="ML Image 2">
-								<img src="assets/images/portfolio/ML3.png" alt="ML Image 3">
-								<img src="assets/images/portfolio/ML4.png" alt="ML Image 4">
-								<img src="assets/images/portfolio/ML5.png" alt="ML Image 5">
-								<img src="assets/images/portfolio/ML6.png" alt="ML Image 6">
-						</div>
-						<a href="#" target="_blank">View</a>
-				</div>
 	</div>
-	</div>
-
 
 		<!--project-card ends-->
+
 
 		<!--contact start -->
 		<section id="contact" class="contact">
@@ -833,20 +755,20 @@
 								<div class="contact-adress">
 									<div class="contact-add-head">
 										<h3>Ramy Majed Ali</h3>
-										<p>web developer</p>
+										<p>Software Quality Assurance Engineer</p>
 									</div>
 									<div class="contact-add-info">
 										<div class="single-contact-add-info">
 											<h3>phone</h3>
-											<p>+923088518325</p>
+											<p>+92 308 8518325</p>
 										</div>
 										<div class="single-contact-add-info">
 											<h3>email</h3>
 											<p>ramikhairi123@gmail.com</p>
 										</div>
 										<div class="single-contact-add-info">
-											<h3>website</h3>
-											<p>########</p>
+											<h3>location</h3>
+											<p>Lahore, Pakistan</p>
 										</div>
 									</div>
 								</div><!--/.contact-adress-->

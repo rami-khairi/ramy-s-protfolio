@@ -368,9 +368,10 @@ nav.navbar.bootsnav .navbar-toggle i {
   justify-content: center;
   position: relative;
   background: url(../images/about/welcome-banner.jpeg) no-repeat;
-  background-size: auto;
-  background-position: center;
-  height: 890px;
+  background-size: cover;
+  background-position: center 20%;
+  height: 650px;
+  overflow: hidden;
 }
 .welcome-hero:before {
   position: absolute;
@@ -379,13 +380,16 @@ nav.navbar.bootsnav .navbar-toggle i {
   left: 0;
   width: 100%;
   height: 100%;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .header-text {
-  margin-top: 500px;
+  margin-top: 0;
+  position: relative;
+  z-index: 1;
 }
 .header-text h1 {
-  color: #131212;
+  color: #ffffff;
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -393,7 +397,7 @@ nav.navbar.bootsnav .navbar-toggle i {
   margin-top: 0px;
 }
 .header-text h2 {
-  color: #131212;
+  color: #ffffff;
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -401,7 +405,7 @@ nav.navbar.bootsnav .navbar-toggle i {
   margin-top: 0px;
 }
 .header-text h3 {
-  color: #131212;
+  color: #ffffff;
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -409,7 +413,7 @@ nav.navbar.bootsnav .navbar-toggle i {
   margin-top: 0px;
 }
 .header-text h3 span {
-  color: #000000;
+  color: #ffffff;
 }
 .header-text p {
   color: #fff;
