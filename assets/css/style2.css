@@ -364,14 +364,22 @@ nav.navbar.bootsnav .navbar-toggle i {
 
 .welcome-hero {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   position: relative;
   background: url(../images/about/welcome-banner.jpeg) no-repeat;
   background-size: cover;
-  background-position: center 20%;
+  background-position: center 15%;
   height: 650px;
+  padding-top: 90px;
   overflow: hidden;
+}
+@media (max-width: 767px) {
+  .welcome-hero {
+    height: 550px;
+    padding-top: 60px;
+    background-position: center 10%;
+  }
 }
 .welcome-hero:before {
   position: absolute;
